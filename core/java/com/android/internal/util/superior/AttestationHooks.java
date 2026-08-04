@@ -54,6 +54,7 @@ public final class AttestationHooks {
 
     // Codenames for currently supported Pixels by Google
     private static final String[] pixelCodenames = {
+            "mustang",
             "caiman",
             "akita",
             "husky",
