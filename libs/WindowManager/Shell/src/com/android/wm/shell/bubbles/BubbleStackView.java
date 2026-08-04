@@ -450,7 +450,8 @@ public class BubbleStackView extends FrameLayout
                 @Override
                 public void onStuckToTarget(@NonNull MagnetizedObject.MagneticTarget target,
                         @NonNull MagnetizedObject draggedObject) {
-                    if (draggedObject.getUnderlyingObject() instanceof View view) {
+                    if (draggedObject.getUnderlyingObject() instanceof View) {
+                        View view = (View) draggedObject.getUnderlyingObject();
                         animateDismissBubble(view, true);
                     }
                 }
@@ -459,7 +460,8 @@ public class BubbleStackView extends FrameLayout
                 public void onUnstuckFromTarget(@NonNull MagnetizedObject.MagneticTarget target,
                         @NonNull MagnetizedObject draggedObject,
                         float velX, float velY, boolean wasFlungOut) {
-                    if (draggedObject.getUnderlyingObject() instanceof View view) {
+                    if (draggedObject.getUnderlyingObject() instanceof View) {
+                        View view = (View) draggedObject.getUnderlyingObject();
                         animateDismissBubble(view, false);
 
                         if (wasFlungOut) {
@@ -474,7 +476,8 @@ public class BubbleStackView extends FrameLayout
                 @Override
                 public void onReleasedInTarget(@NonNull MagnetizedObject.MagneticTarget target,
                         @NonNull MagnetizedObject<?> draggedObject) {
-                    if (draggedObject.getUnderlyingObject() instanceof View view) {
+                    if (draggedObject.getUnderlyingObject() instanceof View) {
+                        View view = (View) draggedObject.getUnderlyingObject();
                         mExpandedAnimationController.dismissDraggedOutBubble(
                                 view /* bubble */,
                                 mDismissView.getHeight() /* translationYBy */,
