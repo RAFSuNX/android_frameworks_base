@@ -72,9 +72,9 @@ import java.util.Objects;
 import java.util.StringJoiner;
 import java.util.concurrent.TimeoutException;
 
-import com.android.internal.util.superior.AttestationHooks;
-import com.android.internal.util.superior.GamesPropsUtils;
-import com.android.internal.util.superior.PixelPropsUtils;
+import com.android.internal.util.zyle.AttestationHooks;
+import com.android.internal.util.zyle.GamesPropsUtils;
+import com.android.internal.util.zyle.PixelPropsUtils;
 
 /**
  * Base class for implementing application instrumentation code.  When running

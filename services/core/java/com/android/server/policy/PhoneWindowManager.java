@@ -221,7 +221,7 @@ import com.android.internal.policy.LogDecelerateInterpolator;
 import com.android.internal.policy.PhoneWindow;
 import com.android.internal.policy.TransitionAnimation;
 import com.android.internal.statusbar.IStatusBarService;
-import com.android.internal.util.superior.SuperiorUtils;
+import com.android.internal.util.zyle.ZyleUtils;
 import com.android.internal.util.ScreenshotHelper;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.server.AccessibilityManagerInternal;
@@ -2808,12 +2808,12 @@ public class PhoneWindowManager implements WindowManagerPolicy {
         if (mTorchActionMode == 2 && longpress) {
             performHapticFeedback(HapticFeedbackConstants.LONG_PRESS, false,
                     "Power - Long Press - Torch");
-            SuperiorUtils.toggleCameraFlash();
+            ZyleUtils.toggleCameraFlash();
             return true;
         } else if (mTorchActionMode == 1 && !longpress) {
             performHapticFeedback(HapticFeedbackConstants.LONG_PRESS, false,
                       "Power - Double Press - Torch");
-            SuperiorUtils.toggleCameraFlash();
+            ZyleUtils.toggleCameraFlash();
             return true;
         }
         return false;
@@ -6843,7 +6843,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
     public void sendCustomAction(Intent intent) {
         String action = intent.getAction();
         if (action != null) {
-            if (SuperiorUtils.INTENT_SCREENSHOT.equals(action)) {
+            if (ZyleUtils.INTENT_SCREENSHOT.equals(action)) {
                 mContext.enforceCallingOrSelfPermission(Manifest.permission.ACCESS_SURFACE_FLINGER,
                         TAG + "sendCustomAction permission denied");
                 interceptScreenshotChord(SCREENSHOT_KEY_OTHER, 0 /*pressDelay*/);

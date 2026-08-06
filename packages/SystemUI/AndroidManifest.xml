@@ -554,7 +554,7 @@
                   android:theme="@style/ExTunerSettings"
                   android:label="@string/status_bar_items_title"
                   android:process=":tuner"
-                  android:parentActivityName="com.superior.lab.fragments.StatusBarSettings"
+                  android:parentActivityName="com.zyle.lab.fragments.StatusBarSettings"
                   android:exported="true">
         </activity>
 

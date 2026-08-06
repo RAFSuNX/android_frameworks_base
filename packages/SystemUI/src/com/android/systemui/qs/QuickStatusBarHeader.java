@@ -36,7 +36,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.android.systemui.res.R;
-import com.android.systemui.superior.header.StatusBarHeaderMachine;
+import com.android.systemui.zyle.header.StatusBarHeaderMachine;
 import com.android.systemui.util.LargeScreenUtils;
 
 import com.bosphere.fadingedgelayout.FadingEdgeLayout;

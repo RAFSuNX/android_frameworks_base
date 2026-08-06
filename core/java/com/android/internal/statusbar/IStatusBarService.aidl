@@ -233,7 +233,7 @@ interface IStatusBarService
     /** Shows rear display educational dialog */
     void showRearDisplayDialog(int currentBaseState);
 
-    /** Superior additions. */
+    /** Zyle additions. */
     void toggleCameraFlash();
 
     void killForegroundApp();

@@ -133,7 +133,7 @@ public class HeadsUpTile extends QSTileImpl<QSTile.BooleanState> {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.SUPERIOR;
+        return MetricsEvent.ZYLE;
     }
 
     @Override

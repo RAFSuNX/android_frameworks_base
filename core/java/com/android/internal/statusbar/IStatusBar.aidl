@@ -388,7 +388,7 @@ oneway interface IStatusBar
     */
     void enterDesktop(int displayId);
 
-    /** Superior additions. */
+    /** Zyle additions. */
     void toggleCameraFlash();
 
     void killForegroundApp();

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C)2020-2024 The ZyleOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+     <!-- Color of the UDFPS pressed view -->
+     <color name="config_udfpsColor">#ffffffff</color>
+
+     <!-- Udfps vendor code -->
+     <integer name="config_udfps_vendor_code">0</integer>
+
+     <!-- Allow devices override audio panel location to the left side -->
+     <bool name="config_audioPanelOnLeftSide">false</bool>
+
+     <!-- Whether to play turbulence noise after clicking the play button -->
+     <bool name="config_turbulenceNoise">true</bool>
+
+     <!-- FPSInfoService FPS node file path -->
+     <string name="config_fpsInfoSysNode" translatable="false">
+          /sys/class/drm/sde-crtc-0/measured_fps</string>
+
+     <!-- FPS measure interval in milliseconds, default 1000 -->
+     <integer name="config_fpsReadInterval">1000</integer>
+
+     <!-- Whether show refresh rate QS tile -->
+     <bool name="config_showRefreshRateQsTile">false</bool>
+</resources>

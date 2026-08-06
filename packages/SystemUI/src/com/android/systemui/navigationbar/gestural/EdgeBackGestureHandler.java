@@ -76,7 +76,7 @@ import android.window.BackEvent;
 
 import androidx.annotation.DimenRes;
 
-import com.android.internal.util.superior.SuperiorUtils;
+import com.android.internal.util.zyle.ZyleUtils;
 import com.android.internal.config.sysui.SystemUiDeviceConfigFlags;
 import com.android.internal.policy.GestureNavigationSettingsObserver;
 import com.android.systemui.Dependency;
@@ -1333,43 +1333,43 @@ public class EdgeBackGestureHandler implements PluginListener<NavigationEdgeBack
             default:
                 break;
             case 1: // Voice search
-                SuperiorUtils.launchVoiceSearch(mContext);
+                ZyleUtils.launchVoiceSearch(mContext);
                 break;
             case 2: // Camera
-                SuperiorUtils.launchCamera(mContext);
+                ZyleUtils.launchCamera(mContext);
                 break;
             case 3: // Flashlight
-                SuperiorUtils.toggleCameraFlash();
+                ZyleUtils.toggleCameraFlash();
                 break;
             case 4: // Application
                 launchApp(mContext, mIsOnLeftEdge, isVertical);
                 break;
             case 5: // Volume panel
-                SuperiorUtils.toggleVolumePanel(mContext);
+                ZyleUtils.toggleVolumePanel(mContext);
                 break;
             case 6: // Screen off
-                SuperiorUtils.switchScreenOff(mContext);
+                ZyleUtils.switchScreenOff(mContext);
                 break;
             case 7: // Screenshot
-                SuperiorUtils.takeScreenshot(true);
+                ZyleUtils.takeScreenshot(true);
                 break;
             case 8: // Notification panel
-                SuperiorUtils.toggleNotifications();
+                ZyleUtils.toggleNotifications();
                 break;
             case 9: // QS panel
-                SuperiorUtils.toggleQsPanel();
+                ZyleUtils.toggleQsPanel();
                 break;
             case 10: // Clear notifications
-                SuperiorUtils.clearAllNotifications();
+                ZyleUtils.clearAllNotifications();
                 break;
             case 11: // Ringer modes
-                SuperiorUtils.toggleRingerModes(mContext);
+                ZyleUtils.toggleRingerModes(mContext);
                 break;
             case 12: // Kill app
-                SuperiorUtils.killForegroundApp();
+                ZyleUtils.killForegroundApp();
                 break;
             case 13: // Switch recent app
-                SuperiorUtils.switchToLastApp(mContext);
+                ZyleUtils.switchToLastApp(mContext);
                 break;
         }
     }
